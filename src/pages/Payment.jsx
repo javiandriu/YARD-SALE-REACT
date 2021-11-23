@@ -1,12 +1,12 @@
 import React from 'react';
 import { PayPalButton } from 'react-paypal-button-v2';
 import {connect} from "react-redux";
-import pass from '../utils/pass';
 import '../styles/payment.css';
+require('dotenv').config()
 
 const Payment = ({history,cart,count}) => {
 
-    const API_KEY = pass.paypalPaymentClientID;
+    const API_KEY = process.env.REACT_APP_CLIENT_ID;
     
     const paypalOptions ={
         clientId: 'API_KEY',
