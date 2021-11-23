@@ -8,6 +8,8 @@ import { Link } from 'react-router-dom';
 
 const MyOrders = (props) => {
 
+	
+
 	const sumTotal = () => {
 		const reducer = (accumulator, currentValue) => accumulator + currentValue.price * props.count[currentValue.id];
 		const sum = props.cart.reduce(reducer,0);

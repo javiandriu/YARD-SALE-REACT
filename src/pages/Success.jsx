@@ -12,7 +12,7 @@ const Success = props => {
 			<div className="form-container">
 				<img src={logo_yard_sale} alt="logo" className="logo" />
 				<h2 className="title">{`${props.buyer[0].name}, Thanks for your order`}</h2>
-        <span className="subtitle">It will come to you within 3 days from now on.</span>
+        		<span className="subtitle">It will come to you within 3 days from now on.</span>
 				<div className="delivery-image">
 					<img src={delivery} alt="email" />
 				</div>

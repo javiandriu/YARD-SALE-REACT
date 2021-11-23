@@ -15,12 +15,6 @@ const Header = props => {
     const { user } = props;
     const hasUser = Object.keys(user).length > 0;
 
-    const sumTotal = () => {
-		const reducer = (accumulator, currentValue) => accumulator + currentValue.price * props.count[currentValue.id];
-		const sum = props.cart.reduce(reducer,0);
-		return sum;
-	}
-
     const { count } = props;
     const counts = Object.values(count);
 

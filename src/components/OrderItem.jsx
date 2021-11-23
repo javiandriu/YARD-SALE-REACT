@@ -7,6 +7,7 @@ import iconClose from "../assets/icons/icon_close.png";
 
 const OrderItem = ({ product, removeFromCartRequest, count }) => {
     
+	
 	const handleRemoveFromCart = item => {
 		removeFromCartRequest(item);
 	}
